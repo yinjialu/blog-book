@@ -1,0 +1,17 @@
+# 通常建议项目最顶层的配置文件设置该值
+root = true
+
+[*]
+# 并设置文件的编码类型
+charset=utf-8
+
+# 表示以 Unix 风格的换行符结尾
+end_of_line=lf
+insert_final_newline=false
+
+# 除去换行行首的任意空白字符
+trim_trailing_whitespace=true
+
+# 四格缩进
+indent_style=space
+indent_size=4

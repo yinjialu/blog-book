@@ -1,30 +1,44 @@
 {
-  "name": "blog-book",
-  "version": "1.0.0",
-  "description": "javascript vue node ",
-  "main": "index.js",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/yinjialu/blog-book.git"
-  },
-  "keywords": [
-    "javascript",
-    "vue",
-    "node"
-  ],
-  "author": "yinjialu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yinjialu/blog-book/issues"
-  },
-  "homepage": "https://github.com/yinjialu/blog-book#readme",
-  "devDependencies": {
-    "vuepress": "^0.14.10",
-    "webpack-dev-middleware": "3.6.0"
-  }
+    "name": "blog-book",
+    "version": "1.0.0",
+    "description": "javascript vue node ",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "deploy": "sh deploy.sh",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "prettier-eslint --write \"src/**/*.vue\""
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-commit": "sh eslint.sh"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/yinjialu/blog-book.git"
+    },
+    "keywords": [
+        "javascript",
+        "vue",
+        "node"
+    ],
+    "author": "yinjialu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yinjialu/blog-book/issues"
+    },
+    "homepage": "https://github.com/yinjialu/blog-book#readme",
+    "devDependencies": {
+        "vuepress": "^0.14.10",
+        "webpack-dev-middleware": "3.6.0",
+        "@commitlint/cli": "^7.5.2",
+        "@commitlint/config-conventional": "^7.5.0",
+        "eslint": "^4.15.0",
+        "prettier": "1.16.4",
+        "prettier-eslint-cli": "^4.7.1",
+        "husky": "^1.3.1"
+    }
 }
