@@ -1,8 +1,32 @@
 module.exports = {
+    base: '/blog-book/',
     title: '前端日志',
     description: '记录，总结，分享，javascript，node',
-    base: '/blog-book/',
     head: [
-        ['link', { rel: 'icon', href: './dragon.png' }]
-    ]
+        ['link', { rel: 'icon', href: '/dragon.png' }]
+    ],
+    themeConfig: {
+        repo: 'yinjialu/blog-book',
+        repoLabel: 'Github',
+        docsDir: 'docs',
+        editLinks: true,
+        editLinkText: '在 GitHub 上编辑此页',
+        lastUpdated: '上次更新',
+        nav: [
+            {
+                text: '联系我',
+                link: 'yinjialu12132gmail.com'
+            }
+        ],
+        sidebar: [
+            {
+                title: '准备工作',
+                collapsable: false,
+                children: [
+                    ['note/', 'Introduction'],
+                    'note/codetype',
+                ]
+            }
+        ]
+    }
 };
