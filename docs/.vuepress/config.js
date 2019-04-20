@@ -12,12 +12,7 @@ module.exports = {
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新',
-        nav: [
-            {
-                text: '联系我',
-                link: 'yinjialu12132gmail.com'
-            }
-        ],
+        nav: [],
         sidebar: [
             {
                 title: '准备工作',
