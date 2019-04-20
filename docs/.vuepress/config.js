@@ -20,6 +20,7 @@ module.exports = {
                 children: [
                     ['note/', 'Introduction'],
                     'note/codetype',
+                    'note/favicon',
                 ]
             }
         ]
