@@ -14,6 +14,7 @@ new HtmlWebpackPlugin({
 ```
 favicon.ico 一般添加到根目录，也可以放在其他目录，对应修改webpack.dev.conf.js 配置路径即可，修改后需要重启
 
+3. `webpack.test.conf.js` `webpack.prod.conf.js` 也需要相同配置
 
 ### 进阶用法
 * 动态修改 favicon.ico
