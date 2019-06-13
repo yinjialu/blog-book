@@ -21,6 +21,8 @@ module.exports = {
                     ['note/', 'Introduction'],
                     'note/codetype',
                     'note/favicon',
+                    'note/this',
+                    'note/闭包和高阶函数'
                 ]
             }
         ]
