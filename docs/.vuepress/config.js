@@ -23,7 +23,8 @@ module.exports = {
                     'note/favicon',
                     'note/this',
                     'note/闭包和高阶函数',
-                    'note/singleton'
+                    'note/singleton',
+                    'note/socket.io'
                 ]
             }
         ]
