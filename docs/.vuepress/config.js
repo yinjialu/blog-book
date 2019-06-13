@@ -22,7 +22,8 @@ module.exports = {
                     'note/codetype',
                     'note/favicon',
                     'note/this',
-                    'note/闭包和高阶函数'
+                    'note/闭包和高阶函数',
+                    'note/singleton'
                 ]
             }
         ]
