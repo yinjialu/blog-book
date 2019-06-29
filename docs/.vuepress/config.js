@@ -24,7 +24,8 @@ module.exports = {
                     'note/this',
                     'note/闭包和高阶函数',
                     'note/singleton',
-                    'note/socket.io'
+                    'note/socket.io',
+                    'note/cache'
                 ]
             }
         ]
