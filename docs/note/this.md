@@ -1,7 +1,7 @@
 # this
 
 ## 确定this
-[this.js](../../tool/this.js)
+[this.js](../.vuepress/public/tool/this.js)
 
 ## 指定this
-[call&apply.js](../../tool/call&apply.js)
+[call&apply.js](../.vuepress/public/tool/call&apply.js)
