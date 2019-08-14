@@ -61,6 +61,18 @@ console.log(a);   //  2  局部变量没有改变
     
     console.log(a);   //  2
     ```
+* 严格模式下
+
+    ```js
+    "use strict";
+    eval('var b = 6');   //  ReferenceError: b is not defined
+    console.log(b);
+    ```
+    不能为外层作用域引入变量
+    ```js
+    eval('var b = 6');
+    console.log(b);   //  6
+    ```
 
 ## 总结
 
