@@ -10,7 +10,7 @@
 
 ## node express 设置 cookie
 
-1. cookie-parser
+* cookie-parser
 ```javascript
 const express = require('express');
 const app = express();
@@ -30,6 +30,13 @@ app.use('/', (req, res, next) => {
         console.log('cookie exists', cookie);
     }
     next();
+});
+```
+
+* writeHead
+```js
+res.writeHead(200, {
+    'Set-Cookie': ['user=userName'],
 });
 ```
 
