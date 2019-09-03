@@ -14,7 +14,7 @@
 </details>
 
 <details>
-<summary>Promsie：</summary>
+<summary>Promise：</summary>
 
 * Promise 解决了什么问题
   * 链式调用是怎么实现的？
@@ -59,4 +59,6 @@
 * v-model 封装组件
 
 ## JavaScript 模块机制
+
+## 浏览器缓存机制
 
