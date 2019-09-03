@@ -41,5 +41,8 @@
         "prettier-eslint-cli": "^4.7.1",
         "vuepress": "^0.14.10",
         "webpack-dev-middleware": "3.6.0"
+    },
+    "dependencies": {
+        "bluebird": "^3.5.5"
     }
 }
