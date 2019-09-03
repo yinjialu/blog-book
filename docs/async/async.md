@@ -11,3 +11,8 @@
 <<< @/docs/.vuepress/public/tool/ES6/async/runner.js
 
 ## async 语法糖  => 启动器 + 状态机
+
+## 已有方案
+
+* [step](https://github.com/creationix/step)
+* [asap](https://github.com/kriskowal/asap)

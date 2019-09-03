@@ -55,5 +55,13 @@
 
     <<< @/docs/.vuepress/public/tool/ES6/Promise/promise.js
 
+## 已有方案
+* [bluebird](https://github.com/petkaantonov/bluebird)
+* [promise](https://github.com/then/promise)
+* [q](http://github.com/kriskowal/q)
+* [when](https://github.com/cujojs/when)
+* [asynquence](https://github.com/getify/asynquence)
+* [es6-promise](https://github.com/stefanpenner/es6-promise)
+
 ## 还未理解的
 1. resolve 与 Promise.resolve 之间的关系
