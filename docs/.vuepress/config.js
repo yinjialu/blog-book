@@ -56,6 +56,7 @@ module.exports = {
                 children: [
                     'tool/driver',
                     'tool/validator',
+                    'tool/portal',
                 ],
             }, {
                 title: '好记性不如烂笔头',
