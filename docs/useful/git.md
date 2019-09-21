@@ -15,3 +15,13 @@
     * `Changes not staged for commit:` 还没有提交到暂存区的改动 下一步 `git add` 添加到暂存区
     * `Untracked files:` 不受git管理的文件，一般是新创建的文件， 下一步`git add`
 2. `git diff <文件路径>` 在终端查看 diff 看有哪些地方改动了。
+3. 本地分支强制覆盖远程分支 `git push --force-with-lease origin feature`
+4. 修改 最近一次commit的提交信息 `git commit --amend` 
+5. 文件名大小写
+   1. 文件名改大小写识别不到
+   2. `git config core.ignorecase false` 设置本地git环境识别大小写
+   3. 修改文件名 <path/filename> ==> <path/>FileName>
+   4.  push 到远程分支
+   5. 删除多余的文件 `git rm --cached <path/filename>`
+      1.  提示 `rm '<path/>filename>'` 删除成功
+   6. add commit push 提交到远程仓库
