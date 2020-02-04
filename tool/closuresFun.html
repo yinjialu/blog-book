@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>命名模式</title>
+</head>
+<body>
+<button id="execute">打开电视</button>
+<button id="undo">关闭电视</button>
+</body>
+<script>
+    var Tv = {
+        open: function () {
+            console.log('打来电视机');
+        },
+        close: function () {
+            console.log('关闭电视');
+        }
+    };
+
+    //  面向对象的方式
+    /*
+    * 解耦命令发起者和执行者
+    * */
+
+    var OpenTvCommand = function (receiver) {
+        // 命令接受者当作对象的属性保存起来
+        this.receiver = receiver;
+    };
+
+    OpenTvCommand.prototype.execute = function () {
+        this.receiver.open();
+    };
+
+    OpenTvCommand.prototype.undo = function () {
+        this.receiver.close();
+    };
+
+    //  闭包版本
+
+    var createCommand = function (receiver) {
+        //  命令接受者被封闭在闭包形成的环境中
+        var execute = function () {
+            return receiver.open();
+        };
+
+        var undo = function () {
+            return receiver.close();
+        };
+
+        return {
+            execute,
+            undo,
+        }
+    };
+
+    var setCommand = function (command) {
+        document.getElementById('execute').onclick = function () {
+            command.execute();
+        };
+        document.getElementById('undo').onclick = function () {
+            command.undo();
+        };
+    };
+
+    setCommand(new OpenTvCommand(Tv));
+    setCommand(createCommand(Tv));
+
+    /*
+    * 比较 OpenTvCommand 和 createCommand
+    * OpenTvCommand 会暴露属性 receiver
+    * createCommand 不会暴露命令接受者
+    * */
+</script>
+</html>
